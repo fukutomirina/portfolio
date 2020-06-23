@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+/*-----全体の設定-----*/
+* {
+  box-sizing: border-box;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+ul {
+  list-style-type: none;
+}
+.flex {
+  display: flex;
+}
+.wrapper {
+  width: 980px;
+  margin: 0 auto;
+}
+
+/*-----headerの設定-----*/
+header {
+  color: #ffffff;
+}
+
+/*-----navの設定-----*/
+.gnavi {
+  background-color: #99cc33;
+}
+.gnavi ul {
+  background-color: #006600;
+  width: 50%;
+  margin: 0 auto;
+}
+.gnavi li {
+  display: block;
+  padding: 0.5em 0;
+  flex: 1 1 100px;
+  /*子要素の横幅を指定-*/
+  border-right: 3px solid #99cc33;
+  height: 30px;
+  text-align: center;
+}
+
+/*-----mainの設定-----*/
+main article {
+  width: 620px;
+  margin-top: 20px;
+}
+main article h1 {
+  margin-bottom: 20px;
+  color: #006600
+}
+.main01 p {
+  margin-left: 40px;
+}
+.main02 ul {
+  margin-left: 40px;
+}
+main article ul li {
+  margin-right: 15px;
+}
+main article ul li a img {
+  width: 126px;
+  height: auto;
+}
+main article h1 img {
+  width: 40px;
+  height: auto;
+}
+
+/*-----asideの設定-----*/
+aside {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+aside h1 {
+  text-align: center;
+  font-size: 1em;
+  border-bottom: 2px dashed #808080;
+  margin-bottom: 275px;
+}
+aside img {
+  margin-bottom: 20px;
+}
+
+/*-----footerの設定-----*/
+footer {
+  background-color: #99cc33;
+  height: 45px;
+  text-align: center;
+  color: #fff;
+}

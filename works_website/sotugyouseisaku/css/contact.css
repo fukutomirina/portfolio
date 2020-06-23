@@ -1,0 +1,288 @@
+@charset "utf-8";
+
+.inner {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.contact-top {
+  margin-top: 0;
+}
+
+.top-image {
+  position: relative;
+  background-image: url(../img/contact_top-bg.jpg);
+}
+
+.top-image h2 {
+  position: absolute;
+  top: 30%;
+  right: 30%;
+  font-size: 50px;
+  color: #db444a;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px #fff;
+}
+
+.top-image h2 span {
+
+  top: 75%;
+  right: 20%;
+  font-size: 20px;
+  color: #db444a;
+  font-weight: 500;
+  width: max-content;
+  text-shadow: 1px 1px 3px #fff;
+  display: block;
+}
+
+
+#formWrap {
+  width: 100%;
+  margin: 0 auto;
+  color: #555;
+  line-height: 120%;
+  font-size: 90%;
+  margin-top: 50px;
+}
+
+#formWrap h3 {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+.form-h3-01 {
+  font-size: 3rem;
+  text-align: center;
+  color: #e57a7e;
+  margin-bottom: 5rem;
+  font-weight: bold;
+}
+
+.form-p {
+  margin: 5rem auto;
+  max-width: 85%;
+}
+
+input {
+  vertical-align: middle;
+  border: 1px solid #ccc;
+}
+
+table.formTable {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-bottom: 5rem;}
+
+table.formTable td,
+table.formTable th {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+table.formTable th {
+  width: 40%;
+  font-weight: normal;
+  background: #efefef;
+  text-align: left;
+}
+
+table.formTable td {
+  line-height: 2.4rem;
+}
+
+input[type="checkbox"] {
+  line-height: 24px;
+}
+
+textarea {
+  border: 0.5px solid grey;
+}
+
+td p {
+  color: #e57a7e;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.ma {
+  margin: 2.5rem 0 5rem 0;
+}
+
+.button input,
+.button a {
+  color: #db444a;
+  font-weight: bold;
+  border: 3px solid #db444a;
+  border-radius: 20px;
+  padding: 1.5rem 3rem;
+  margin: 5rem 0 10rem 0;
+}
+
+.button input:hover,
+.button a:hover {
+  background-color: #db444a;
+  color: #fff;
+}
+
+.button input {
+  margin-right: 3rem;
+}
+
+.button input:last-child {
+  margin-right: 0;
+}
+
+.button {
+  margin-top: 5rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+span {
+  font-size: 1.4rem;
+  color: red;
+}
+
+.polycy {
+  margin-top: 4rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.polycy a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #666666;
+}
+
+.polycy span{
+  color: #db444a;
+  text-decoration: underline;
+}
+.polycy span:hover{
+    color: #ff9933;
+}
+.thanks {
+  padding: 5rem 10rem;
+  text-align: left;
+  height: 100vh;
+}
+
+.thanks a {
+  text-decoration: none;
+}
+
+.contact {
+  /* margin-bottom: 100px; */
+  position: relative;
+}
+.contact h3{
+  color: #666666;
+}
+.mail-p{
+  font-size: 3rem;
+}
+#contact
+{
+  position: relative;
+}
+
+.contact-paragraph {
+  text-align: center;
+}
+
+
+
+/*　簡易版レスポンシブ用CSS（必要最低限のみとしています。ブレークポイントも含め自由に設定下さい）　*/
+@media screen and (max-width:1024px) {
+  .top-image {
+    background-position: 70%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .top-image {
+    background-position: 65%;
+  }
+}
+
+@media screen and (max-width:572px) {
+  #formWrap {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .form-h3-01{
+    padding-top: 5rem;
+  }
+  table.formTable th,
+  table.formTable td {
+    width: auto;
+    display: block;
+  }
+
+  table.formTable th {
+    margin-top: 5px;
+    border-bottom: 0;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 80%;
+    padding: 5px;
+    font-size: 110%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"] {
+    display: block;
+    width: 100%;
+    height: 40px;
+  }
+
+  .button input {
+    padding: 1rem;
+    margin: 0;
+    margin-top: 5rem;
+    text-align: center;
+  }
+
+  .button input:last-child {
+    margin-bottom: 5rem;
+  }
+
+  .button {
+
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .top-image {
+    background-position: 40%;
+  }
+
+  #formWrap h3 {
+    font-size: 2rem;
+  }
+
+  .form-h3-01 {
+    margin: 0;
+    padding: 5rem 0;
+
+  }
+
+  .ma {
+    margin: 3rem 0;
+  }
+
+  
+
+}

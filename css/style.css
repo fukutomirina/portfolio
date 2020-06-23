@@ -1,0 +1,588 @@
+@charset "utf-8";
+/*---------------------
+共通部分
+---------------------*/
+*,
+*::before
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  line-height: 1.7;
+  background-color: rgba(0, 0, 0, 0.082);
+}
+a{
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.6;
+}
+img{
+  max-width: 100%;
+  vertical-align: bottom;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+.flex {
+  display: flex;
+  display: -ms-flexbox; /* ie10 */
+}
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+/*---------------------
+header部分
+---------------------*/
+.index_header_bgc {
+  padding-top: 72px;
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff8e;
+}
+.index_header {
+  justify-content: space-between;
+	flex-wrap: wrap;
+  -ms-flex-wrap: wrap; /*ie10*/
+}
+.index_header_title {
+  font-size: 2.4rem;
+  color: #000;
+}
+/*---------------------
+nav部分
+---------------------*/
+.main_nav {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.main_nav2 {
+  justify-content: space-between;
+}
+.flex .main_nav_list {
+  display: block;
+  margin-left: 4rem;
+}
+.flex .main_nav_list:nth-child(5) {
+  display: block;
+  margin-left: 6.4rem;
+}
+.flex .main_nav_list:nth-child(6) {
+  display: block;
+  margin-left: 1.2rem;
+}
+.main_nav.flex {
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+.main_nav_list_color {
+  color: #000;
+}
+.my-gray {
+  color: #000;
+}
+/*---------------------
+hero部分
+---------------------*/
+.index_hero {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background: url(../img/top_img.jpg) no-repeat center center / cover;
+  min-height: 100vh;
+}
+.index_hero_title {
+  padding-top: 320px;
+  text-transform: capitalize;
+}
+.index_hero_name1 {
+  font-size: 7.2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.index_hero_name2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.7;
+  padding-left: 1%;
+}
+/*---------------------
+footer部分
+---------------------*/
+.index_footer {
+  color: #000;
+  font-size: 1.6rem;
+  padding-top: 96vh;
+  text-align: end;
+}
+.index_footer2 {
+  color: #000;
+  font-size: 1.6rem;
+  text-align: end;
+}
+/*---------------------
+profile部分
+---------------------*/
+.profile_top {
+  padding-top: 160px;
+}
+.profile_top_title1 {
+  text-align: center;
+  font-size: 5.6rem;
+  color: #000;
+  text-transform: capitalize;
+}
+.profile_top_group1 {
+  width: 100%;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap; /* ie10 */
+  margin-top: 40px;
+}
+.profile_top_img {
+  width: 50%;
+}
+.profile_top_group2 {
+  width: 50%;
+  overflow: hidden;
+  padding: 4%;
+}
+.profile_top_title2 {
+  display: block;
+  font-size: 4rem;
+  color: #000;
+  text-transform: capitalize;
+}
+.profile_top_introduction {
+  display: block;
+  font-size: 1.6rem;
+  color: #000;
+}
+.profile_skills {
+  margin-top: 80px;
+}
+.profile_skills_title1 {
+  text-align: center;
+  font-size: 5.6rem;
+  color: #000;
+  text-transform: capitalize;
+}
+.profile_skills_group1 {
+  margin-top: 40px;
+  justify-content:space-between;
+  flex-wrap: wrap;
+	-ms-flex-wrap: wrap; /* ie10 */
+}
+.profile_skills_group2 {
+  width: 30%;
+  padding: 2%;
+  margin-bottom: 32px;
+  border: 1px solid #000;
+}
+.profile_skills_title2 {
+  font-size: 4rem;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+.profile_skills_introduction {
+  font-size: 2.4rem;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.profile_career {
+  margin-top: 58px;
+}
+.profile_career_title1{
+  text-align: center;
+  font-size: 5.6rem;
+  color: #000;
+  text-transform: capitalize;
+}
+.profile_career_group1 {
+  margin-top: 40px;
+  border: 1px solid #000;
+  padding: 4%;
+
+}
+.profile_career_group2 {
+  width: 100%;
+  position: relative;
+  font-size: 2rem;
+  color: #000;
+  max-width: 880px;
+  margin: 0 auto;
+}
+.profile_career_year {
+  display: block;
+  width: 30%;
+  padding-top: 24px;
+  padding-right: 8px;
+  text-align: center;
+}
+.profile_career_content {
+  display: block;
+  width: 70%;
+  padding-top: 24px;
+  border-left: 2px solid #000;
+  position: relative;
+  padding-left: 8%;
+}
+.profile_career_content::before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+  top: 32px;
+  left: -8px;
+}
+.profile_career_content2 {
+  display: block;
+  width: 70%;
+  padding-top: 24px;
+  border-left: 2px solid #000;
+  position: relative;
+  padding-left: 8%;
+}
+.profile_vision {
+  margin-top: 100px;
+  margin-bottom: 80px;
+  overflow: hidden;
+}
+.profile_vision_background {
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 4%;
+}
+.profile_vision_title1 {
+  text-align: center;
+  font-size: 5.6rem;
+  color: #000;
+  text-transform: capitalize;
+}
+.profile_vision_introduction {
+  text-align: center;
+  font-size: 2rem;
+  color: #000;
+  margin-top: 40px;
+  margin-bottom: 64px;
+}
+/*---------------------
+works部分
+---------------------*/
+.works_top1 {
+padding-top: 160px;
+}
+.works_top_title1 {
+  text-align: center;
+  font-size: 5.6rem;
+  color: #000;
+  text-transform: capitalize;
+}
+.works_top_title2 {
+  text-align: center;
+  font-size: 3.2rem;
+  color: #000;
+  text-transform: capitalize;
+}
+.works_top_title3 {
+  text-align: center;
+  font-size: 3.2rem;
+  color: #000;
+  text-transform: capitalize;
+  margin-top: 80px;
+}
+.works_flex {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding-top: 40px;
+  flex-wrap: wrap;
+	-ms-flex-wrap: wrap; /* ie10 */
+}
+.works_card_group1 {
+  margin-bottom: 8rem;
+  width: 48%;
+  text-transform: capitalize;
+}
+.works_namecard {
+  display: block;
+  width: 48%;
+  align-self: flex-start;
+}
+.works_card_group1:nth-child(even) {
+  margin-left: 4%;
+}
+.works_namecard:nth-child(even) {
+  margin-left: 4%;
+}
+.card_title {
+  font-size: 2.4rem;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.card_explanation{
+  font-size: 1.6rem;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.works_top2 {
+  margin-bottom: 80px;
+}
+/*---------------------
+contact部分
+---------------------*/
+#formwrap {
+  color:#000;
+  justify-content: space-between;
+  padding-top: 200px;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+	-ms-flex-wrap: wrap; /* ie10 */
+}
+.index_contact_group1 {
+  display: block;
+  padding-top: 10px;
+  width: 50%;
+}
+.index_contact_group2 {
+  width: 50%;
+  padding-top: 24px;
+}
+.index_contact_title {
+  font-size: 5.6rem;
+  color: #000;
+  text-transform: capitalize;
+}
+.index_contact_p {
+  font-size: 1.6rem;
+}
+.index_contact_p_color {
+  color: #000;
+}
+.index_works_group2 {
+  z-index: 0;
+  order: 1;
+}
+.formtable {
+  display: block;
+  text-align: left;
+  width: 100%;
+  font-size: 1.6rem;
+	font-weight: normal;
+}
+.formtable1 {
+  padding-bottom: 16px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+	width: 100%;
+	padding: 4%;
+	font-size: 110%;
+  display: block;
+  background-color: #fff;
+  border: 1px #000 solid;
+  font-size: 1,6rem;
+}
+input[type="submit"],
+input[type="reset"] {
+	width:30%;
+  height:40px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  background-color: #000;
+  border: 1px #000 solid;
+  font-size: 1,6rem;
+  color: #fff;
+}
+.contact_p {
+  padding-left: 1%;
+}
+/*==================================
+レスポンシブ
+pcを基本設計にする
+  - 1280px〜：大型pc
+  - 960px〜1279px：小型pc
+  - 600px〜959px：タブレット
+  - 480px〜599px：スマートフォン横
+  - 〜479px：スマートフォン縦
+==================================*/
+
+/* 960px〜1279px：小型pc
+------------------------------ */
+@media screen and (min-width:960px) and (max-width:1279px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* 600px〜959px：タブレット
+------------------------------ */
+@media screen and (min-width:600px) and (max-width:959px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .profile_top_img {
+    width: 50%;
+  }
+  .profile_top_group2 {
+    width: 50%;
+  }
+  .profile_skills_group2 {
+    width: 30%;
+  }
+  .index_header_title {
+    width: 100%;
+  }
+  .index_contact_p_color {
+    padding-right: 4rem;
+  }
+}
+
+/* 480px〜599px：スマートフォン横
+------------------------------ */
+@media screen and (min-width:480px) and (max-width:599px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .profile_top_img {
+    width: 100%;
+  }
+  .profile_top_group2 {
+    width: 100%;
+  }
+  .profile_skills_group2 {
+    width: 100%;
+  }
+}
+
+/* 〜479px：スマートフォン縦
+------------------------------ */
+@media screen and (max-width:479px) {
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .profile_top_img {
+    width: 100%;
+  }
+  .profile_top_group2 {
+    width: 100%;
+  }
+  .profile_skills_group2 {
+    width: 100%;
+    padding: 8%;
+  }
+  .profile_career_group2 {
+    font-size: 1.6rem;
+  }
+  .profile_vision_introduction {
+    font-size: 1.6rem;
+  }
+  .works_card_group1 {
+    width: 100%;
+  }
+  .works_namecard {
+    width: 100%;
+  }
+  .works_namecard:nth-child(even) {
+    margin-left: 0%;
+    margin-top: 3.2rem;
+  }
+  .index_contact_group1 {
+    display: block;
+    width: 100%;
+  }
+  .index_contact_group2 {
+    width: 100%;
+    padding-top: 48px;
+  }
+  .index_header_title {
+    font-size: 2.4rem;
+    color: #000;
+  }
+  .works_card_group1:nth-child(even) {
+    margin-left: 0%;
+  }
+  .flex .main_nav_list {
+    margin-left: 1.8rem;
+  }
+  .flex .main_nav_list:nth-child(1) {
+    margin-left: 0rem;
+  }
+  .flex .main_nav_list:nth-child(5) {
+    margin-left: 4.8rem;
+  }
+  .flex .main_nav_list:nth-child(6) {
+    margin-left: 1.6rem;
+}
+  .index_header_bgc {
+    padding-top: 32px;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.555);
+  }
+  #formwrap {
+    padding-top: 160px;
+  }
+  .index_hero_title {
+    padding-top: 280px;
+  }
+  .index_hero_name1 {
+    font-size: 6.4rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  .index_hero_name2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.1;
+    padding-left: 1%;
+  }
+  .index_contact_group1 {
+    padding-top: 0px;
+  }
+  .index_contact_title {
+    text-align: center;
+  }
+  .index_contact_p {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+
+/* 〜320px：スマートフォン縦
+------------------------------ */
+@media screen and (max-width:320px) {
+  .flex .main_nav_list:nth-child(5) {
+    margin-left: 2rem;
+  }
+  .flex .main_nav_list:nth-child(6) {
+    display: block;
+    margin-left: 0.1rem;
+  }
+  .index_contact_p {
+    text-align: center;
+    font-size: 1rem;
+  }
+}

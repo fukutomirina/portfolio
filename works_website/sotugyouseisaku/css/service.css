@@ -1,0 +1,1906 @@
+@charset "utf-8";
+
+
+body {
+  position: relative;
+}
+
+/*-top-image-*/
+.top-none {
+  padding-bottom: 8rem;
+}
+
+.top-image {
+  background-image: url(../img/service_top-bg.jpg);
+  background-position: center;
+  position: relative;
+}
+
+.top-image h2 {
+  position: absolute;
+  top: 30%;
+  right: 30%;
+  font-size: 50px;
+  color: #db444a;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px #fff;
+}
+
+.top-image h2 span {
+
+  top: 75%;
+  right: 20%;
+  font-size: 20px;
+  color: #db444a;
+  font-weight: 500;
+  width: max-content;
+  text-shadow: 1px 1px 3px #fff;
+  display: block;
+}
+
+/*-タブメニュー-*/
+
+.tab_area {
+  overflow: hidden;
+  display: table;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.thema::after {
+  content: "";
+  width: 100%;
+  height: 44px;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.tab_area li {
+  /*Tabの装飾*/
+  color: #fff;
+  background: #eb9797;
+  margin-right: 5px;
+  padding: 3px 12px;
+  border-radius: 10px 10px 0 0;
+  border: 2px solid #eb9797;
+  z-index: 2;
+  cursor: pointer;
+  float: left;
+  list-style: none;
+}
+
+.all_area {
+  background: #fceded;
+  padding: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.all_area div.content_area {
+  /*Tabの内容を表示するエリアの装飾*/
+  background: #fceded;
+  padding: 10px 10px 10px 2px;
+}
+
+.tab_area li.select {
+  /*アクティブタブの装飾*/
+  background-color: #fceded;
+  color: #e57a7e;
+  background-image: none;
+  border-bottom: 2px solid #fceded;
+}
+
+.tab_area li:hover {
+  background-color: #fceded;
+  color: #e57a7e;
+  border-bottom: 2px solid #fceded;
+}
+
+.hide {
+  display: none;
+}
+
+/*-thema-*/
+
+.thema {
+  background-color: #fceded;
+  position: relative;
+  margin-top: 5rem;
+}
+
+.thema1 {
+  margin: 0 auto;
+}
+
+.thema1,
+.thema2,
+.thema3 {
+  width: 33vw;
+}
+
+.thema1 p,
+.thema2 p,
+.thema3 p {
+  width: 80%;
+  margin: auto;
+  margin-top: 35px;
+}
+
+.thema h3 {
+  color: #7e6c6c;
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+}
+
+.thema h4 {
+  color: #db444a;
+  font-size: 2rem;
+}
+
+/*-タブメニュー-*/
+.spmode {
+  display: none;
+}
+
+.anger-control-sp {
+  display: none;
+}
+
+.spmode-h3 {
+  display: none;
+}
+
+.spmode-box {
+  display: none;
+}
+
+.tab-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab-wrap-content {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #cc3333;
+ 
+}
+
+.tab-content01 h3 {
+  color: #7e6c6c;
+  text-align: center;
+  margin-bottom: 0;
+  padding-top: 5rem;
+}
+
+.tab-content h2 {
+  color: #e57a7e;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+.tab-content img {
+  margin: 0 auto;
+}
+
+.thema-tab-flex {
+  margin-top: 0rem;
+  justify-content: space-between;
+}
+
+.service-thema-item p{
+    width: 17em;
+
+}
+
+
+/*tab2 - アンガーマネージメント-*/
+
+.anger-bottom-image img {
+  width: auto;
+}
+
+.anger-top-image img {
+  width: 100%;
+}
+
+
+.anger-yajirusi-image {
+  padding: 45px;
+  text-align: center;
+}
+
+.anger-yajirusi-image img {
+  width: auto;
+}
+
+.anger-right h3 {
+  text-align: left;
+  padding-top: 0;
+}
+
+.ange-right h4 {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.anger-right {
+  margin-left: 30px;
+  text-align: left;
+}
+
+/*tab4 - アンコンシャス-*/
+
+#unconscious {
+  margin-top: 0rem;
+  padding-top: 5rem;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+#unconscious h3 {
+  font-size: 25px;
+  margin-bottom: 24px;
+}
+
+#unconscious p {
+  padding-bottom: 5rem;
+  color: #e57a7e;
+  font-weight: bold;
+  text-align: left;
+  font-size: 20px;
+}
+
+.unconscious img {
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.unconscious-sp {
+  display: none;
+}
+
+.anger-title {
+  margin-top: 7rem;
+  padding: 0 6.5rem 0 3rem;
+}
+
+.anger-title h4 {
+  color: #E57A7E;
+  margin-top: 3.5rem;
+}
+
+.anger-control {
+  margin-top: 10.5rem;
+  padding: 0 6.5rem 0 3rem;
+}
+
+.anger-control p {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #7e6c6c;
+  margin-bottom: 6.5rem;
+}
+
+
+.anger-r-box {
+  background-color: #7E6C6C;
+  padding: 3rem;
+  color: #fff;
+  margin-top: 5rem;
+}
+
+.anger-r-box h3 {
+  color: #fff;
+  text-align: left;
+  border-bottom: 2px solid #fff;
+  padding: 0;
+}
+
+.anger-lastbox {
+  background-color: #7e6c6c;
+  padding: 1.5rem 2rem;
+  color: #fff;
+}
+
+.anger-lastbox h3 {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 1rem;
+}
+
+.first {
+  margin-bottom: 3rem;
+}
+
+.tab-flex-in h3 {
+  margin: 2rem 0 1rem 0;
+  padding-top: 3rem;
+}
+
+.tab01-right {
+  color: #7e6c6c;
+  padding-right: 5rem;
+}
+
+.tab01-right p {
+  margin-bottom: 5rem;
+  font-weight: bold;
+}
+
+.tab01-right h3 {
+  color: #db444a;
+  margin: 1rem;
+}
+
+.tab01-left {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.tab01-left img {
+  width: 55%;
+}
+
+.kaiketu img {
+  width: 100%;
+}
+.anger-down{
+  text-align: center;
+}
+.anger-down img {
+  width: auto;
+text-align: center;
+}
+
+.anger-kekka {
+  text-align: center;
+
+}
+
+.anger-kekka h3 {
+  color: #DB444A;
+  margin-bottom: 3rem;
+}
+
+.anger-kekka p {
+  line-height: 3rem;
+  font-weight: bold;
+  color: #7E6C6C;
+}
+
+.anger-kekka span {
+  color: #E57A7E;
+  font-size: 2rem;
+}
+
+
+/*タブメニュー-ラベル設定-*/
+
+.tab-label,
+.tab-switch:checked ~ .tab-switch:last-of-type + .tab-label {
+  color: #fff;
+  background: #eb9797;
+  margin-right: 5px;
+  padding: 3px 12px;
+  border-radius: 10px 10px 0 0;
+  border: 2px solid #eb9797;
+  z-index: 2;
+  cursor: pointer;
+}
+
+
+.tab-label {
+  order: -1;
+}
+
+.tab-switch {
+  display: none;
+}
+
+.tab-content,
+.tab-switch:checked ~ .tab-content:last-of-type {
+  width: 100%;
+  display: none;
+  background-color: #fceded;
+
+}
+
+.tab-switch:checked + .tab-label,
+.tab-label:last-of-type {
+  background: #fceded;
+  color: #eb9797;
+  border-bottom: none;
+  transition: .4s;
+}
+
+.tab-switch:checked + .tab-label,
+.tab-label:last-of-type:hover {
+  background-color: #fceded;
+  color: #e57a7e;
+
+}
+
+.tab-switch:checked + .tab-label + .tab-content,
+.tab-content:last-of-type {
+  display: block;
+  padding: 5rem 0;
+}
+
+.tab-order .tab-label:last-of-type {
+  order: -2;
+}
+
+
+/*tab1 -service-thema-item-*/
+
+.service-thema-item {
+  width: 46%;
+}
+
+.service-thema-item li {
+  list-style: none;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+.service-thema-item li:nth-child(2) {
+  padding: 1.5rem;
+}
+
+
+.service-thema-item img {
+  width: 10rem;
+  margin: 2rem;
+}
+
+/*qualification*/
+
+.qualification {
+  justify-content: space-around;
+  margin-top: 4rem;
+}
+.qualification img{
+  width: 30%;
+}
+.qualification-left p:first-child {
+  background-color: #e57a7e;
+  color: #fff;
+  width: fit-content;
+  padding: 5px 15px;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.qualification-left p:nth-child(2) {
+  padding: 2.5rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #7e6c6c;
+}
+
+.qualification-right img {
+  max-height: 100%;
+  text-align: center;
+  margin: 0;
+
+}
+
+.loopbox {
+  display: flex;
+  justify-content: space-around;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.fas {
+  font-size: 100px;
+  color: #db444a;
+}
+
+.fas01 {
+  transform: rotate(-45deg);
+}
+
+.fas02 {
+  transform: rotate(45deg);
+}
+
+.loop {
+  margin: 10% 0 auto 0;
+}
+
+.circle {
+  position: relative;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  background-color: #e57a7e;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+/*tab3 -ハラスメント-*/
+
+#harassment h2 {
+  color: #7e6c6c;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  font-size: 2.5rem;
+  padding-top: 0;
+}
+
+#harassment p {
+  color: #e57a7e;
+  font-weight: bold;
+  font-size: 2rem;
+
+}
+
+#harassment .harassment-image-pc {
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+
+#harassment .harassment-image-sp {
+  display: none;
+}
+
+#harassment .harassment-paragraph {
+  color: #e57a7e;
+  font-size: 2rem;
+}
+
+#harassment .harassment-paragraph2 {
+  color: #db444a;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 7rem;
+}
+
+.anger-down {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+#harassment .customer-paragraph,
+#anger .customer-paragraph,
+#unconscious .customer-paragraph {
+  text-align: center;
+  font-weight: 600;
+  color: #7e6c6c;
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+#harassment .customer-hukidashi,
+#anger .customer-hukidashi,
+#unconscious .customer-hukidashi {
+  text-align: center;
+}
+
+#harassment .customer-hukidashi img,
+#anger .customer-hukidashi img,
+#unconscious .customer-hukidashi img {
+  width: 350px;
+}
+
+.unconscious-image-sp{
+    display: none;
+}
+
+
+#harassment .list-dot,
+#anger .list-dot,
+#unconscious .list-dot {
+  width: 1em;
+}
+
+.customer-voice {
+  list-style: none;
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.customer-voice li {
+  margin-top: 0.5em;
+}
+
+.indent {
+ padding-left: 1rem;
+  text-indent: -1.5rem;
+}
+
+
+/*tab4 -コンサルティングーテーマ-*/
+.consulting-thema {
+  padding: 0 15rem;
+}
+
+.consulting-thema-content {
+  margin-top: 5rem;
+}
+
+.consulting-thema h2 {
+  color: #7e6c6c;
+  margin-bottom: 5rem;
+  padding-top: 0;
+}
+
+.consulting-thema h3 {
+  color: #db444a;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.consulting-thema img {
+  height: 100px;
+  width: 100px;
+}
+
+.consulting-thema .right-paragraph {
+  margin-left: 5rem;
+}
+
+.consulting-thema .right-paragraph p {
+  text-align: justify;
+  margin-top: 1rem;
+}
+
+.women-img img {
+  width: 60px;
+  margin: 0 2rem;
+}
+
+/*tab4 -コンサルティングーフロー-*/
+
+.consulting-flow h2 {
+  margin-bottom: 5rem;
+  color: #7e6c6c;
+}
+
+.consulting-flow-bg1-top {
+  background-image: url(../img/step1.png);
+  background-size: 100%;
+}
+
+.consulting-flow-bg2 {
+  background-image: url(../img/step2.png);
+  background-size: 100%;
+}
+
+.consulting-flow-bg3 {
+  background-image: url(../img/step3.png);
+  background-size: 100%;
+}
+
+.consulting-flow-bg4 {
+  background-image: url(../img/step4.png);
+  background-size: 100%;
+}
+
+.consulting-flow-bg5 {
+  background-image: url(../img/step5.png);
+  background-size: 100%;
+}
+
+.consulting-flow-bg-bottom {
+  background-image: url(../img/step-bottom.png);
+  height: 6rem;
+  background-size: 100%;
+}
+
+.consulting-flow-bg p {
+  width: 40em;
+  margin: 0 auto;
+  text-align: justify;
+  }
+
+.consulting-flow-bg h3 {
+  padding-top: 7.5rem;
+  margin-bottom: 0;
+  color: #db444a;
+  margin-top: 4rem;
+}
+
+.consulting-flow img {
+  width: 5rem;
+  margin: 2rem auto;
+  display: block;
+}
+
+/*-研修形式 -*/
+
+.others {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.fa-angle-down {
+  text-align: center;
+  color: #cc3333;
+  font-size: 7rem;
+}
+
+.others-flex {
+  padding: 35px 70px;
+  justify-content: space-between;
+}
+
+.others-flex,
+.theme-flex {
+  justify-content: space-around;
+}
+
+.others-flex img {
+  padding-right: 3rem;
+}
+
+.others h2 {
+  padding-top: 4rem;
+  color: #666666;
+}
+
+.others-in {
+  width: 100%;
+}
+
+.others-menu h3 {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 0.5rem;
+}
+
+.others-menu {
+  justify-content: space-around;
+  height: 33%;
+}
+
+.others-menu-in:nth-child(even) {
+  margin-right: 0;
+}
+
+.others-menu-in {
+  background-color: #7e6c6c;
+  padding-top: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
+  margin: 1rem 0;
+  width: 205px;
+  margin-right: 1rem;
+}
+
+.others-menu-in-last {
+  margin-bottom: 1rem;
+}
+
+.in04,
+.in05 {
+  margin-bottom: 0;
+}
+
+
+/*-料金-*/
+
+.price {
+  background-color: #fff5eb;
+  padding: 40px 0;
+}
+
+.price-flex {
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  justify-content: center;
+}
+
+.price-p {
+  font-size: 1.8rem;
+  color: #7e6c6c;
+  text-align: center;
+  font-weight: bold;
+}
+
+.cash span {
+  font-size: 5rem;
+}
+
+.price h3 {
+  text-align: center;
+  color: #7e6c6c;
+  padding-bottom: 35px;
+  font-size: 2.5rem;
+}
+
+.price-left {
+  background-color: #e57a7e;
+  position: relative;
+  padding: 20px 30px;
+  position: relative;
+  height: 146px;
+}
+
+.price-left::after {
+  content: "";
+  position: absolute;
+  right: -50px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid #e57a7e;
+  border-top: 73px solid transparent;
+  border-bottom: 73px solid transparent;
+}
+
+.price-left p {
+  font-size: 2.5rem;
+  font-weight: bole;
+  color: #fff;
+}
+
+.price-left small {
+  font-size: 2rem;
+  font-weight: bole;
+}
+
+.price-right {
+  color: #7e6c6c;
+  padding-left: 80px;
+}
+
+
+.price-right h2 {
+  font-size: 7rem;
+  font-weight: bold;
+  line-height: 7.2rem;
+}
+
+.price-right p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+/*flow*/
+
+.flow {
+  padding: 6rem 5rem;
+  text-align: center;
+}
+
+.flow h2 {
+  margin-bottom: 6rem;
+  color: #7e6c6c;
+}
+
+.flow-flex {
+  justify-content: space-around;
+  display: flex;
+}
+
+.flow-icon {
+  background-color: #71becc;
+  color: #fff;
+  width: 40%;
+  padding: 3rem;
+}
+
+.flow-icon:nth-child(even) {
+  margin-left: 0;
+}
+
+
+.flow-in {
+  background-color: #DB444A;
+  position: absolute;
+  top: -10rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 42%;
+  height: 80%;
+}
+
+.flow-icon img {
+  width: 50%;
+  height: 50%;
+  max-width: 100%;
+}
+
+.flow-icon h3 {
+  padding: 1rem 0;
+  border-bottom: 2px solid #fff;
+  margin: 0 auto;
+}
+
+.flow-icon p {
+  text-align: justify;
+  padding-top: 1rem;
+}
+
+.flow .angle {
+    margin: auto 2rem;
+    height: 23px;
+    width: 23px;
+    text-align: center;
+}
+
+.flow .arrow {
+  justify-content: space-around;
+  margin: 2.5rem 0;
+}
+
+/*customer*/
+
+.customer {
+  background-color: #fceded;
+  position: relative;
+}
+
+.customer h2 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding: 0;
+}
+
+.customer-flex {
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.customer-flex:last-child {
+  margin-bottom: 0;
+}
+
+.customer-flex img {
+  width: 500px;
+  /*仮画像用です本当の画像いれたら削除*/
+}
+
+.customer-in h4 {
+  border-bottom: 1px solid #db444a;
+  padding: 2rem 0 2rem 3rem;
+}
+
+.customer-p01,
+.customer-p02 {
+  padding: 2rem 3rem;
+}
+
+
+.customer p {
+  padding-left: 3rem;
+}
+
+.customer-p {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem;
+  padding-bottom: 8rem;
+  color: #666666;
+  font-weight: bold;
+  text-align: center;
+  background-image: url(../img/b-icon.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+}
+
+.customer-p p {
+  font-size: 2rem;
+}
+
+.customer-pbox {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.customer-pbox p {
+  background-image: url(../img/c-icon.png);
+  background-position: top left;
+  line-height: 3rem;
+  color: #666666;
+  background-repeat: no-repeat;
+}
+
+.customer-pbox p:nth-child(2) {
+  background-position: top left;
+}
+
+.customer-link a {
+  color: #db444a;
+  font-weight: bold;
+}
+
+.customer-link a:hover {
+  color: #b3b3b3;
+}
+
+/*-------------------------
+
+   メディアクエリ 1024px
+
+-------------------------*/
+
+
+@media screen and (max-width: 1024px) {
+
+  /*タブメニュー*/
+
+  /*tab1 テーマ*/
+
+  .thema h3 {
+    font-size: 2rem;
+  }
+
+  .thema h4 {
+    font-size: 1.8rem;
+  }
+
+    .service-thema-item{
+        width: 50%;
+        
+    }
+    
+  .service-thema-item p {
+    font-size: 1.4rem;
+      width: 12em;
+  }
+
+  .service-thema-item img {
+    width: 8rem;
+  }
+
+  .qualification-left p:first-child {
+    font-size: 2rem;
+    ;
+  }
+
+  .qualification-left p:nth-child(2) {
+    font-size: 1.8rem;
+  }
+    
+    
+
+  /*tab3 アンガーマネージメント*/
+
+  .anger-right {
+    margin-left: 30px;
+    text-align: left;
+  }
+  .anger-right h3{
+    font-size: 2.5rem;
+  }
+  .anger-title {
+    margin-top: 5rem;
+    padding: 0 0 0 3rem;
+    margin-bottom: 5rem;
+  }
+
+  .anger-title h4 {
+    color: #E57A7E;
+    margin-top: 2rem;
+  }
+
+  .anger-control {
+    padding-top: 2rem;
+    margin-bottom: 8.5rem;
+  }
+
+  .anger-control p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .anger-r-box .first {
+    margin-bottom: 2rem;
+  }
+
+  .anger-left img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .anger-top-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .anger-yajirusi-image {
+    padding: 45px 0;
+  }
+
+  .kaiketu {
+    width: 40%;
+  }
+
+  .kaiketu img {
+    width: 100%;
+  }
+
+  .thema{
+    margin-top: 20px;
+  }
+
+
+  .anger-kekka h3 {
+    padding-top: 2rem;
+  }
+
+
+  .anger-down {
+    text-align: center;
+    width: auto;
+  margin: 5rem 0;
+  }
+  #harassment{
+    margin-bottom: 0;
+  }
+  /*.tab4 コンサルティングテーマ*/
+  .consulting-thema {
+    padding: 0 5rem;
+  }
+
+  /*tab4 コンサルティングフロー*/
+  .consulting-flow-bg p {
+    width: 40rem;
+    margin: 0 auto;
+  }
+
+  .consulting-flow-bg h3 {
+   
+    margin-bottom: 0;
+    color: #db444a;
+  }
+
+
+  .customer-voice{
+    width: 100%;
+  }
+  /*研修方式*/
+
+  .others h2 {
+    font-size: 2rem;
+  }
+
+  .others-flex img {
+    width: 35rem;
+    height: 100%;
+    padding-top: 1.8rem;
+  }
+
+  .others .others-menu-in {
+    width: 165px;
+  }
+
+  .others .others-menu-in h3 {
+    font-size: 1.6rem;
+  }
+
+  /*料金*/
+
+  .price-left {
+    min-width: 360px;
+  }
+
+  .price-left p,
+  .price-p {
+    font-size: 2.5rem;
+  }
+
+  .price-right p {
+    font-size: 2rem;
+  }
+
+  .price-right h2 {
+    font-size: 6rem;
+  }
+
+  .price-right span {
+    font-size: 4rem;
+  }
+
+  /*-flow-*/
+
+  .flow-icon img {
+    height: 40%;
+  }
+
+  /*-customer-*/
+  .customer-flex img {
+    width: 400px;
+  }
+
+  .customer-in h4 {
+    border-bottom: 1px solid #db444a;
+    padding: 1rem 0 1rem 1.5rem;
+  }
+
+  .customer p {
+    padding-left: 3rem;
+    font-size: 1.4rem;
+  }
+
+  .customer-p01,
+  .customer-p02 {
+    padding: 1rem 1.5rem;
+  }
+}
+
+/* -------------------------
+
+  メディアクエリ（767px）
+
+---------------------------*/
+
+@media screen and (max-width: 767px) {
+
+  /*-top-image-*/
+
+  .top-image {
+    background-position: 30%;
+  }
+
+  .symbol {
+    display: none;
+  }
+
+  /*-タブメニュー-*/
+
+  .service-thema-item {
+    width: 100%;
+  }
+
+  .tab_area li {
+    float: inherit;
+    border-radius: 0;
+    border: none;
+  }
+
+  .tab_area {
+    width: 100%;
+  }
+
+  .tab-order .tab-label:last-of-type {
+    font-size: 14px;
+  }
+
+  .tab_area li.select {
+    /*アクティブタブの装飾*/
+    border: none;
+    border-bottom: 2px solid #e94545;
+  }
+
+  .tab-label,
+  .tab-switch:checked ~ .tab-switch:last-of-type + .tab-label {
+    font-size: 14px;
+    padding: 3px 5px;
+  }
+
+  /*tab1 テーマ*/
+
+  .qualification-left p:nth-child(2) {
+    font-size: 1.6rem;
+  }
+
+  .qualification-left p:first-child {
+    font-size: 1.8rem;
+  }
+
+  .thema::after {
+    height: 28px;
+  }
+    
+    .service-thema-item p{
+        width: auto;
+        min-width: 18em;
+    }
+
+  /*-tab3 アンガーマネージメント-*/
+
+  .anger-right h3 {
+    font-size: 2rem;
+
+  }
+
+  .anger-title {
+    margin-top: 3rem;
+    padding: 0 0 0 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .anger-title h4 {
+    color: #E57A7E;
+    margin-top: 2rem;
+  }
+
+  .anger-control {
+    padding-top: 0;
+    margin-bottom: 0;
+    margin-top: 8rem;
+  }
+
+  .ange-right h4 {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+
+    /*アンコンシャスバイアス*/
+    
+    .unconscious-image-sp{
+        display: block;
+    }
+    
+    .unconscious-image-pc{
+        display: none;
+    }
+    
+  /*研修方式*/
+
+  .others {
+    padding: 5rem
+  }
+
+  .others-flex {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .others-flex img {
+    width: 100%;
+    padding-top: 2rem;
+    padding-right: 0;
+  }
+
+  .others .others-menu-in {
+    width: 50%;
+  }
+
+  /*tab3 -ハラスメント-*/
+
+  #harassment .harassment-image-pc {
+    display: none;
+  }
+
+  #harassment .harassment-image-sp {
+    display: block;
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+
+  /*tab5 consulting-thema*/
+
+  .consulting-thema {
+    padding: 0 5rem;
+  }
+
+  .consulting-flow {
+    padding: 0 5rem;
+  }
+
+  .consulting-thema-content {
+    display: block;
+  }
+
+  .consulting-thema-content .right-paragraph {
+    margin-left: 0;
+  }
+
+  .consulting-thema-content .left-image {
+    text-align: center;
+  }
+
+  .consulting-thema-content .right-paragraph h3 {
+    text-align: center;
+  }
+
+  /*tab5 .consulting-flow*/
+  .consulting-flow-bg p {
+    margin: 0 auto;
+  }
+
+  .consulting-flow-bg h3 {
+        margin-bottom: 0;
+    padding-top: 6rem;
+    color: #db444a;
+  }
+
+  .pink-circle h3 {
+    text-align: center;
+    padding-top: 3rem;
+    margin-top: 0.5rem;
+  }
+
+  .pink-circle {
+    width: 400px;
+    height: 450px;
+    margin: 0 auto;
+  }
+
+  .pink-circle p {
+    width: 19em;
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+
+  .pink-circle .consulting-thema-2nd-paragraph {
+    margin-top: 5rem;
+  }
+
+  .pink-circle img {
+    margin-top: 5rem;
+  }
+
+  /*flow*/
+
+  .flow-icon {
+    width: 45%;
+    padding: 2rem;
+  }
+
+  .flow-icon img {
+    height: 20%;
+    width: 80%;
+  }
+
+  .flow-icon h3 {
+    font-size: 1.6rem;
+  }
+
+  .flow-icon p {
+    font-size: 1.4rem;
+  }
+
+  .flow .angle {
+    margin: auto 2rem;
+    height: 23px;
+    width: 23px;
+    text-align: center;
+  }
+
+  /*-price-*/
+
+  .price-flex {
+    display: block;
+    text-align: center;
+  }
+
+  .price-left::after {
+    display: none;
+  }
+
+  .price-left p,
+  .price-p {
+    font-size: 2rem
+  }
+
+  .price-left {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .price-right {
+    padding-left: 0;
+    padding-top: 3rem;
+  }
+
+  /*-customer-*/
+
+  .customer {
+    padding: 0 5rem;
+  }
+
+  .customer-flex img {
+    width: 100%;
+  }
+
+  .customer-in {
+    order: 0;
+  }
+
+  .customer-img {
+    order: -1;
+  }
+
+  .customer-img img {
+    width: 100%;
+  }
+
+  .customer-flex {
+    flex-direction: column;
+  }
+}
+
+/*------------------------------
+
+   メディアクエリ（480px）
+
+------------------------------*/
+
+
+@media screen and (max-width: 480px) {
+
+  .right-angle {
+    transform: rotate(90deg)
+  }
+
+  .left-angle {
+    transform: rotate(-90deg)
+  }
+
+  .service-thema-item img {
+    width: 5rem;
+    margin: 1rem;
+  }
+
+  .thema h4 {
+    font-size: 1.6rem;
+  }
+
+
+  .thema::after {
+    height: 24px;
+  }
+
+  /*-top-image-*/
+
+  .top-image {
+    background-position: 35%;
+  }
+
+  .spmode {
+    display: block;
+    text-align: center;
+  }
+
+  /*タブメニュー*/
+
+  .tab-order .tab-label:last-of-type {
+    font-size: 12px;
+  }
+
+  .tab-label,
+  .tab-switch:checked ~ .tab-switch:last-of-type + .tab-label {
+    font-size: 12px;
+    margin-right: 2px;
+    padding: 2px;
+  }
+
+  /*-tab1 テーマ-*/
+  .qualification {
+    display: block;
+    text-align: center;
+  }
+
+  .qualification-right {
+    text-align: center;
+  }
+
+  .qualification-left p:nth-child(2) {
+    padding: 2rem 0;
+  }
+  .qualification img{
+   width: 80%; 
+  }
+
+  /*-tab2 アンガーマネージメント-*/
+
+  .anger-control-sp {
+    display: block;
+    background-image: url(../img/anger02.png);
+    background-size: 45%;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-right: 0;
+    padding-left: 0;
+    text-align: left;
+    padding: 5.5rem 0 0;
+    margin-top: 0;
+  }
+
+  .anger-control-sp p {
+    padding-bottom: 3rem;
+  }
+
+  .anger-lastbox h3 {
+    padding-top: 1rem;
+
+  }
+
+  .anger-lastbox p {
+    text-align: left;
+  }
+
+  .anger-bottom-image img {
+    width: 100%;
+  }
+  
+  
+  .unconscious-sp {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .unconscious-blown {
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+    background-color: #666666;
+  }
+
+  .unconscious-blown p {
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  #harassment .customer-hukidashi img,
+  #anger .customer-hukidashi img,
+  #unconscious .customer-hukidashi img {
+    width: 100%;
+  }
+  
+  #harassment .customer-paragraph,
+  #anger .customer-paragraph,
+  #unconscious .customer-paragraph {
+    font-size: 2rem;
+  }
+  
+  
+  .spmode-h3 {
+    display: block;
+  }
+
+  .spmode-box {
+    display: block;
+  }
+
+  .pcmode {
+    display: none;
+  }
+
+  .anger-title {
+    padding-left: 0;
+  }
+
+  .anger-title h3 {
+    font-size: 2.5rem;
+    padding-top: 0;
+  }
+
+  .anger-title h4 {
+    text-align: left;
+    color: #000;
+    font-weight: normal;
+  }
+
+  .anger-r-box {
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+
+  .tab-content01 h2 {
+    padding: 0 2rem;
+  }
+
+  .tab01-right {
+    padding-right: 0;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .tab01-right h3 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .tab01-right img {
+    width: 90%;
+    margin: 5rem auto;
+  }
+
+  .anger-down img {
+    width: auto;
+  }
+
+  .kekka p {
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .tab01-in {
+    margin: 1rem 0;
+  }
+
+  .tab01-in p {
+    text-align: left;
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+
+  .tab-content h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0;
+  }
+
+  .tab01-01img {
+    padding-right: 2rem;
+  }
+
+
+  /*tab5 .consulting-thema*/
+
+  .consulting-thema {
+    padding: 0 3rem;
+  }
+
+  .consulting-thema img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .consulting-flow h2 {
+    margin: 5rem 0;
+    color: #7e6c6c;
+  }
+
+  .women-img img {
+    width: 60px;
+  }
+
+  /*tab5 .consulting-flow*/
+  .consulting-flow-bg p {
+    width: 30rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+  }
+
+  .consulting-flow-bg h3 {
+    padding-top: 5rem;
+    margin-bottom: 0;
+    color: #db444a;
+  }
+
+  .consulting-flow img {
+    width: 5rem;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .consulting-flow {
+    padding: 0 3rem;
+  }
+
+  /*-研修方式-*/
+
+  .others {
+    padding: 5rem 2rem;
+  }
+
+  .others .others-menu-in h3 {
+    font-size: 1.4rem;
+  }
+
+  .others-p {
+    text-align: center;
+    padding: 1rem;
+    background-image: url(../img/l-icon.png), url(../img/r-icon.png);
+    background-color: rgba(255, 255, 255, 0.8);
+    background-blend-mode: lighten;
+    background-position: left, right;
+    background-size: contain;
+    width: 100%;
+    margin: 5rem 0 0 0;
+  }
+
+  .others-p p {
+    width: 90%;
+  }
+
+  /*-customer-*/
+
+
+  .customer h2 {
+    padding: 0;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    color: #7e6c6c;
+  }
+
+  .customer {
+    padding: 0 3rem;
+  }
+
+  .customer-pbox {
+    padding: 0 0 0 1.5rem;
+    margin-top: 5rem;
+  }
+
+  .customer-p p {
+    padding: 0;
+    font-size: 1.8rem;
+
+  }
+
+  .customer-p {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .customer-pbox p {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  /*-料金-*/
+
+  .price-left {
+    min-width: 90%;
+  }
+
+  .price-right p {
+    font-size: 1.8rem;
+  }
+
+  /*-flow-*/
+
+  .flow {
+    margin: 0 2rem;
+    padding: 6rem 0rem;
+  }
+
+  .flow-flex {
+    flex-direction: column;
+  }
+
+  .flow-flex2 .feedback {
+    order: 3;
+  }
+
+  .flow-flex2 .seminer {
+    order: 1;
+  }
+
+  .flow-flex2 .left-angle {
+    order: 2;
+    margin: 0 auto;
+  }
+
+  .flow .arrow {
+    margin: 0;
+  }
+
+  .flow .angle {
+    margin: 0 auto;
+  }
+
+  .flow .arrow img:first-child {
+    display: none;
+  }
+
+  .flow-icon {
+    width: 80%;
+    padding: 2rem;
+    margin: 2rem auto;
+  }
+}
