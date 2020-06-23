@@ -46,6 +46,7 @@ header部分
   position: fixed;
   width: 100%;
   background-color: #ffffff8e;
+  z-index: 999999;
 }
 .index_header {
   justify-content: space-between;
@@ -93,18 +94,19 @@ nav部分
 hero部分
 ---------------------*/
 .index_hero {
+  background-image: url(../img/top_img.jpg);
   background-size: cover;
-  background-position: center top;
+  background-position: center bottom;
   background-repeat: no-repeat;
-  background: url(../img/top_img.jpg) no-repeat center center / cover;
-  min-height: 100vh;
+  height: 880px;
+  min-height: 320px;
 }
 .index_hero_title {
   padding-top: 320px;
   text-transform: capitalize;
 }
 .index_hero_name1 {
-  font-size: 7.2rem;
+  font-size: 8rem;
   font-weight: bold;
   line-height: 1.2;
 }
@@ -115,24 +117,74 @@ hero部分
   padding-left: 1%;
 }
 /*---------------------
+Button部分
+---------------------*/
+.button_viewmore {
+  position: relative;
+  display: inline-block;
+  padding: .9em 4em;
+  background-color: #333;
+  border: 1px solid #333;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: all .1s;
+  margin-top: 32px;
+  z-index: 10;
+}
+.button_viewmore::after {
+  position: absolute;
+  top: 50%;
+  right: .2em;
+  content: '';
+  margin-top: -5px;
+  border: 7px solid transparent;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-left-color: #fff;
+  transition: all .3s;
+  z-index: 10;
+}
+.button_viewmore:hover {
+  background-color: #fff;
+  color: #333;
+  z-index: 10;
+}
+.post-contents .button01:hover::after {
+  border-left-color: #333;
+  z-index: 10;
+}
+/*---------------------
 footer部分
 ---------------------*/
 .index_footer {
   color: #000;
   font-size: 1.6rem;
-  padding-top: 96vh;
   text-align: end;
+  background-color: #ffffff8e;
+  margin-top: 80px;
 }
 .index_footer2 {
   color: #000;
   font-size: 1.6rem;
   text-align: end;
+  background-color: #ffffff8e;
 }
 /*---------------------
 profile部分
 ---------------------*/
+.index_profile {
+  margin-top: 320px;
+}
 .profile_top {
   padding-top: 160px;
+}
+.profile_top_title1-1 {
+  text-align: left;
+  font-size: 4rem;
+  color: #000;
+  text-transform: capitalize;
+  border-bottom: 1px solid #000;
 }
 .profile_top_title1 {
   text-align: center;
@@ -282,6 +334,13 @@ works部分
 .works_top1 {
 padding-top: 160px;
 }
+.works_top_title1-1 {
+  text-align: left;
+  font-size: 4rem;
+  color: #000;
+  text-transform: capitalize;
+  border-bottom: 1px solid #000;
+}
 .works_top_title1 {
   text-align: center;
   font-size: 5.6rem;
@@ -407,8 +466,8 @@ input[type="reset"] {
   display: block;
   margin-top: 24px;
   margin-bottom: 24px;
-  background-color: #000;
-  border: 1px #000 solid;
+  background-color: #333;
+  border: 1px #333 solid;
   font-size: 1,6rem;
   color: #fff;
 }
