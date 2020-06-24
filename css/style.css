@@ -205,13 +205,23 @@ profile部分
 .profile_top_group2 {
   width: 50%;
   overflow: hidden;
-  padding: 4%;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 .profile_top_title2 {
   display: block;
   font-size: 4rem;
   color: #000;
   text-transform: capitalize;
+  font-weight: bold;
+}
+.profile_top_title2-1 {
+  display: block;
+  font-size: 3.2rem;
+  color: #000;
+  text-transform: capitalize;
+  font-weight: bold;
+  margin-top: 40px;
 }
 .profile_top_introduction {
   display: block;
@@ -332,8 +342,11 @@ profile部分
 /*---------------------
 works部分
 ---------------------*/
+.works_top1-1 {
+  padding-top: 160px;
+}
 .works_top1 {
-padding-top: 160px;
+  padding-top: 160px;
 }
 .works_top_title1-1 {
   text-align: left;
@@ -507,6 +520,7 @@ pcを基本設計にする
   .profile_top_group2 {
     width: 50%;
   }
+  
   .profile_skills_group2 {
     width: 30%;
   }
@@ -545,6 +559,7 @@ pcを基本設計にする
   }
   .profile_top_img {
     width: 100%;
+    padding: 4%;
   }
   .profile_top_group2 {
     width: 100%;
@@ -628,6 +643,9 @@ pcを基本設計にする
   .index_contact_p {
     text-align: center;
     font-size: 1.2rem;
+  }
+  .works_top1-1 {
+    padding-top: 60px;
   }
 }
 
