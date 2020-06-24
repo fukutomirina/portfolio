@@ -56,6 +56,7 @@ header部分
 .index_header_title {
   font-size: 2.4rem;
   color: #000;
+  font-weight: bold;
 }
 /*---------------------
 nav部分
