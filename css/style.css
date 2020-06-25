@@ -123,33 +123,30 @@ Button部分
 .button_viewmore {
   position: relative;
   display: inline-block;
-  padding: .9em 4em;
+  padding: .4em 4em;
   background-color: #333;
   border: 1px solid #333;
   color: #fff;
-  text-align: center;
   text-decoration: none;
   transition: all .1s;
-  margin-top: 32px;
-  z-index: 10;
+  margin-top: 16px;
+  font-size: 1.6rem;
 }
 .button_viewmore::after {
   position: absolute;
   top: 50%;
   right: .2em;
   content: '';
-  margin-top: -5px;
+  transform:translateY(-50%);
   border: 7px solid transparent;
   border-top-width: 5px;
   border-bottom-width: 5px;
   border-left-color: #fff;
   transition: all .3s;
-  z-index: 10;
 }
 .button_viewmore:hover {
   background-color: #fff;
   color: #333;
-  z-index: 10;
 }
 .post-contents .button01:hover::after {
   border-left-color: #333;
