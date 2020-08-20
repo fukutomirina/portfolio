@@ -529,6 +529,9 @@ pcを基本設計にする
   .index_contact_p_color {
     padding-right: 4rem;
   }
+  #message {
+    border-radius: 0%;
+  }
 }
 
 /* 480px〜599px：スマートフォン横
@@ -546,6 +549,9 @@ pcを基本設計にする
   }
   .profile_skills_group2 {
     width: 100%;
+  }
+  #message {
+    border-radius: 0%;
   }
 }
 
@@ -646,6 +652,9 @@ pcを基本設計にする
   .works_top1-1 {
     padding-top: 60px;
   }
+  #message {
+    border-radius: 0%;
+  }
 }
 
 /* 〜320px：スマートフォン縦
@@ -661,5 +670,8 @@ pcを基本設計にする
   .index_contact_p {
     text-align: center;
     font-size: 1rem;
+  }
+  #message {
+    border-radius: 0%;
   }
 }
