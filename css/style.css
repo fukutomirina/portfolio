@@ -42,6 +42,7 @@ ol {
 header部分
 ---------------------*/
 .index_header_bgc {
+  display: block;
   padding-top: 72px;
   position: fixed;
   width: 100%;
