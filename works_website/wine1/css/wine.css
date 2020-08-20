@@ -68,7 +68,7 @@ body {
 }
 .gurasunikannpai {
     position:  absolute;
-    background-color:  #541c74bd;
+    background-color:  rgba(84,28,116,0.8);
     border-radius: 2rem;
     color:  #fff;
     padding: 20px;
