@@ -13,7 +13,7 @@ html {
 body {
   font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   line-height: 1.7;
-  background-color: rgba(0, 0, 0, 0.082);
+  background-color: rgb(255 247 249);
 }
 a{
   text-decoration: none;
@@ -38,15 +38,34 @@ ol {
   margin: 0 auto;
   padding: 0 4%;
 }
+/*下からフェードイン*/
+.fade-in-bottom {
+  opacity: 0;
+  animation-name: fadein-bottom;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+@keyframes fadein-bottom {
+  0% {
+     opacity: 0;
+     transform: translateY(20px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+}
 /*---------------------
 header部分
 ---------------------*/
 .index_header_bgc {
   display: block;
   padding-top: 72px;
+  padding-bottom: 24px;
   position: fixed;
   width: 100%;
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgb(252 237 243);
   /* opacity: ; */
   z-index: 999999;
 }
@@ -109,15 +128,18 @@ hero部分
   text-transform: capitalize;
 }
 .index_hero_name1 {
-  font-size: 8rem;
+  font-size: 10rem;
   font-weight: bold;
   line-height: 1.2;
+  text-shadow: 0 0 0.5em rgb(0 0 0);
+  color: #eedfe6;
 }
 .index_hero_name2 {
-  font-size: 2.4rem;
+  font-size: 10rem;
   font-weight: bold;
-  line-height: 1.7;
-  padding-left: 1%;
+  line-height: 1.2;
+  text-shadow: 0 0 0.5em rgb(0 0 0);
+  color: #eedfe6;
 }
 /*---------------------
 Button部分
@@ -126,8 +148,8 @@ Button部分
   position: relative;
   display: inline-block;
   padding: .4em 4em;
-  background-color: #333;
-  border: 1px solid #333;
+  background-color: #84787d;
+  border: 1px solid #84787d;
   color: #fff;
   text-decoration: none;
   transition: all .1s;
@@ -160,15 +182,13 @@ footer部分
 .index_footer {
   color: #000;
   font-size: 1.6rem;
-  text-align: end;
-  background-color: #ffffff8e;
+  text-align: left;
   margin-top: 80px;
 }
 .index_footer2 {
   color: #000;
   font-size: 1.6rem;
   text-align: end;
-  background-color: #ffffff8e;
 }
 /*---------------------
 profile部分
@@ -220,7 +240,7 @@ profile部分
   color: #000;
   text-transform: capitalize;
   font-weight: bold;
-  margin-top: 40px;
+  margin-top: 5px;
 }
 .profile_top_introduction {
   display: block;
@@ -322,7 +342,7 @@ profile部分
 }
 .profile_vision_background {
   overflow: hidden;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgb(255 234 244);
   padding: 4%;
 }
 .profile_vision_title1 {
@@ -372,6 +392,13 @@ works部分
   color: #000;
   text-transform: capitalize;
   margin-top: 80px;
+}
+.works_top_title4 {
+  text-align: center;
+  font-size: 3.2rem;
+  color: #000;
+  text-transform: capitalize;
+  margin-top: 160px;
 }
 .works_flex {
   margin: 0 auto;
@@ -466,7 +493,7 @@ textarea {
 	padding: 4%;
 	font-size: 110%;
   display: block;
-  background-color: #fff;
+  background-color: rgb(255 253 253);
   border: 1px #000 solid;
   font-size: 1,6rem;
 }
@@ -479,8 +506,8 @@ input[type="reset"] {
   display: block;
   margin-top: 24px;
   margin-bottom: 24px;
-  background-color: #333;
-  border: 1px #333 solid;
+  background-color: #84787d;
+  border: 1px #84787d solid;
   font-size: 1,6rem;
   color: #fff;
 }
@@ -620,7 +647,7 @@ pcを基本設計にする
     padding-top: 32px;
     position: fixed;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.555);
+    background-color: rgb(252 237 243);
   }
   #formwrap {
     padding-top: 160px;
@@ -634,10 +661,9 @@ pcを基本設計にする
     line-height: 1.2;
   }
   .index_hero_name2 {
-    font-size: 1.6rem;
+    font-size: 6.4rem;
     font-weight: bold;
-    line-height: 1.1;
-    padding-left: 1%;
+    line-height: 1.2;
   }
   .index_contact_group1 {
     padding-top: 0px;
