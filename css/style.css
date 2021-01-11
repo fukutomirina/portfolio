@@ -61,7 +61,7 @@ header部分
 ---------------------*/
 .index_header_bgc {
   display: block;
-  padding-top: 72px;
+  padding-top: 24px;
   padding-bottom: 24px;
   position: fixed;
   width: 100%;
@@ -644,7 +644,7 @@ pcを基本設計にする
     margin-left: 1.6rem;
 }
   .index_header_bgc {
-    padding-top: 32px;
+    padding-top: 24px;
     position: fixed;
     width: 100%;
     background-color: rgb(252 237 243);
